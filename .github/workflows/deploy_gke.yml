@@ -50,7 +50,7 @@ jobs:
     - name: Set up GKE credentials
       uses: google-github-actions/get-gke-credentials@v0
       with:
-        cluster_name: ${{ env.GKE_CLUSTER }}
+        cluster_name: rots #TODO : ${{ env.GKE_CLUSTER }}
         location: ${{ env.GKE_ZONE }}
 
     # Build the Docker image
